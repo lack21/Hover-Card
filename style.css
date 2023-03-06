@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #1f1f1f;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  min-height: 100vh;
+}
+
+.dark-body {
+  background-color: #f8f9fa;
+}
+
+.green-card {
+  width: min(350px, 90vw);
+  height: 500px;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/tbilisi.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.green-card:hover .content {
+  bottom: 0;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  transition-delay: 0.9s;
+}
+.green-card:hover .content .line {
+  width: 100%;
+  transition: 0.9s;
+}
+.green-card .content {
+  position: absolute;
+  bottom: -30%;
+  padding: 1rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.green-card .content .title {
+  font-size: 1.5rem;
+  color: #f8f9fa;
+  margin-bottom: 0.5rem;
+}
+.green-card .content .line {
+  width: 0;
+  height: 3px;
+  background-color: #3fcf9f;
+  transform: translateX(-1rem);
+  transition: 0.3s;
+}
+.green-card .content .text {
+  color: #cfcfcf;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+}
+.green-card .content .btn {
+  display: inline-block;
+  background-color: #3fcf9f;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 0.8rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.green-card .content .btn:hover {
+  opacity: 0.8;
+}
+
+.red-card {
+  width: min(350px, 90vw);
+  height: 500px;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/Switzerland.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.red-card:hover .content {
+  bottom: 0;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  transition-delay: 0.9s;
+}
+.red-card:hover .content .line {
+  width: 100%;
+  transition: 0.9s;
+}
+.red-card .content {
+  position: absolute;
+  bottom: -30%;
+  padding: 1rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.red-card .content .title {
+  font-size: 1.5rem;
+  color: #f8f9fa;
+  margin-bottom: 0.5rem;
+}
+.red-card .content .line {
+  width: 0;
+  height: 3px;
+  background-color: #cf2f4f;
+  transform: translateX(-1rem);
+  transition: 0.3s;
+}
+.red-card .content .text {
+  color: #cfcfcf;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+}
+.red-card .content .btn {
+  display: inline-block;
+  background-color: #cf2f4f;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 0.8rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.red-card .content .btn:hover {
+  opacity: 0.8;
+}
+
+.yellow-card {
+  width: min(350px, 90vw);
+  height: 500px;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/newyork.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.yellow-card:hover .content {
+  bottom: 0;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  transition-delay: 0.9s;
+}
+.yellow-card:hover .content .line {
+  width: 100%;
+  transition: 0.9s;
+}
+.yellow-card .content {
+  position: absolute;
+  bottom: -30%;
+  padding: 1rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+.yellow-card .content .title {
+  font-size: 1.5rem;
+  color: #f8f9fa;
+  margin-bottom: 0.5rem;
+}
+.yellow-card .content .line {
+  width: 0;
+  height: 3px;
+  background-color: #cfcf3f;
+  transform: translateX(-1rem);
+  transition: 0.3s;
+}
+.yellow-card .content .text {
+  color: #cfcfcf;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+}
+.yellow-card .content .btn {
+  display: inline-block;
+  background-color: #cfcf3f;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 0.8rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.yellow-card .content .btn:hover {
+  opacity: 0.8;
+}
+
+.switch-btn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #f8f9fa;
+  background-color: #3fcf9f;
+  cursor: pointer;
+  border: none;
+  font-size: 1.3rem;
+}
+.switch-btn:hover {
+  opacity: 0.8;
+}/*# sourceMappingURL=style.css.map */
